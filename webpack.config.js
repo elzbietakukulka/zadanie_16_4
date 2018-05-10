@@ -5,20 +5,18 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'build'),
-        filename: 'index.bundle.js'
+        filename: 'app.bundle.js'
     },
-    
     module: {
-        rules: [ 
+        rules: [
             {
                 test: /\.js$/,
-                exclude: '/node_modules',
                 loader: "babel-loader"
             },
             {
                 test: /\.css$/,
                 use: [
-                    {loader: 'style-loader'}, 
+                    { loader: 'style-loader'},
                     {
                         loader: 'css-loader',
                         options: {
@@ -28,6 +26,5 @@ module.exports = {
                 ]
             }
         ]
-    },
-
+    }
 };
