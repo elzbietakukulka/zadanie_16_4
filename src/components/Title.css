@@ -1,0 +1,10 @@
+.Title h1 {
+	padding: 20px 0;
+	text-align: center;
+}
+
+.Title p {
+	font-size:130%;
+	font-weight: bold;
+ 	padding: 15px;
+}
