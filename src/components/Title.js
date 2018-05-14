@@ -1,14 +1,20 @@
 import React from 'react';
 import style from './Title.css';
 
-const Title = (props) => {
-    return (
-    <div className={style.Title}>
-        <h1>{props.title}</h1>
-        <p>Number of todo tasks: {props.number}</p>
-    </div>
-    );
-    
+class Title extends React.Component {
+    constructor(props){
+        super(props)
+    }
+
+    render() {
+        const dataNumber = this.props.dataNumber
+        return (
+            <div className={style.TodoTitle}>
+                <h1>To do list</h1>
+                <p>Number of added tasks:  {dataNumber.length}</p>
+            </div>
+        )
+    }
 }
 
 export default Title;

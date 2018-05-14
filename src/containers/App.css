@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body { 
+    margin: 0;
+    padding: 0;
+}
+
 .TodoApp {
     background-color: #F5F5F5;
     color: #222;
@@ -9,4 +15,5 @@
     align-content: center;
     width: 100vw;
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
 }
